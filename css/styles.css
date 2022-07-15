@@ -4,6 +4,7 @@
   --mainwhite-color: #ffffff;
   --color-text-footer: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
+  --hovef-color: #188ce8;
   --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #f5f4fa;
   --hero-bg-color: #2f303a;
@@ -19,6 +20,9 @@ body {
 
 .list {
   list-style: none;
+}
+button {
+  border: 0;
 }
 h1,
 h2,
@@ -620,6 +624,10 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+
+.form-field-input:focus + .form-field-icon {
+  fill: var(--accent-color);
+}
 .form-field-inner {
   position: relative;
 }
@@ -635,6 +643,7 @@ address {
 .form-field-textarea {
   height: 120px;
   resize: none;
+  padding: 12px 16px;
 }
 .form-field-checkbox-input {
   margin-left: 13px;
@@ -666,6 +675,13 @@ address {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field-button:hover,
+.form-field-button:focus {
+  background-color: var(--hovef-color);
 }
 /*Модальное окно*/
 
