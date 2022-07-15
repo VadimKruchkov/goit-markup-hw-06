@@ -597,7 +597,76 @@ address {
 .link-portfolio {
   text-decoration: none;
 }
-
+/*Form-field*/
+.form-field {
+  margin-left: 40px;
+}
+.form-field-label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.form-field-input {
+  padding-left: 42px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field-inner {
+  position: relative;
+}
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  fill: var(--primary-text-color);
+}
+.form-field-textarea {
+  height: 120px;
+  resize: none;
+}
+.form-field-checkbox-input {
+  margin-left: 13px;
+}
+.form-field-checkbox {
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.form-field-link {
+  color: var(--accent-color);
+}
+.form-field-button {
+  width: 200px;
+  height: 50px;
+  margin: 30px 164px 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--mainwhite-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /*Модальное окно*/
 
 .backdrop {
@@ -639,7 +708,6 @@ address {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
