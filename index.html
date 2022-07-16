@@ -554,19 +554,19 @@
               </li>
             </ul>
           </div>
-          <div class="Subscribe">
-            <p>Подпишитесь на рассылку</p>
-            <div>
-              <input type="email" name="email" placeholder="E-mail" />
-              <svg>
-                <use
-                  href="/images/icons.svg#icon-icon-send"
-                  width="24px"
-                  height="24px"
-                ></use>
+        </div>
+        <!--Подписка-->
+        <div class="input">
+          <p class="input-text">Подпишитесь на рассылку</p>
+          <form action="" class="form">
+            <input type="email" name="mail" placeholder="E-mail" />
+            <button class="input-btn" type="submit">
+              Подписаться
+              <svg class="input-icon" width="24" height="24">
+                <use href="/images/icons.svg#icon-icon-send"></use>
               </svg>
-            </div>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -629,18 +629,16 @@
               ></textarea>
             </div>
           </div>
-          <div class="form-field">
-            <input
-              class="form-field-checkbox-input"
-              id="terms-condition"
-              type="checkbox"
-              name="terms-condition"
-            />
-            <label
-              class="form-field-label form-field-checkbox"
-              for="terms-condition"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="form-field-link" href="/">Условия договора</a>
+          <div class="form-field-check">
+            <label class="check">
+              <input class="checkbox-input" type="checkbox" name="checkbox" />
+              <span class="check-box"> </span>
+              <span class="check-text"
+                >Соглашаюсь с рассылкой и принимаю &nbsp;
+              </span>
+              <a class="check-link" href="/Условия договора.md"
+                >Условия договора</a
+              >
             </label>
           </div>
           <button class="form-field-button" type="submit">Отправить</button>

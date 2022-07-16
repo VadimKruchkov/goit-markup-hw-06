@@ -4,7 +4,7 @@
   --mainwhite-color: #ffffff;
   --color-text-footer: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
-  --hovef-color: #188ce8;
+  --hover-color: #188ce8;
   --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #f5f4fa;
   --hero-bg-color: #2f303a;
@@ -452,12 +452,15 @@ address {
   display: flex;
 }
 .join-text {
-  color: var(--mainwhite-color);
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  color: var(--mainwhite-color);
 }
 .join-container {
   padding-top: 12px;
@@ -601,6 +604,58 @@ address {
 .link-portfolio {
   text-decoration: none;
 }
+/*--Подписка--*/
+
+.input {
+  margin-left: auto;
+}
+
+.input-text {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 1.14;
+  line-height: 16px;
+  color: var(--mainwhite-color);
+  text-transform: uppercase;
+}
+
+.input input[type="email"] {
+  padding: 14px 14px;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.input-btn {
+  margin-left: 12px;
+  padding: 10px 25px 10px 27px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--mainwhite-color);
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.input-icon {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.input-btn:hover,
+.input-btn:focus {
+  background-color: var(--hover-color);
+}
 /*Form-field*/
 .form-field {
   margin-left: 40px;
@@ -624,7 +679,10 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-
+.form-field-input:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
 .form-field-input:focus + .form-field-icon {
   fill: var(--accent-color);
 }
@@ -645,22 +703,79 @@ address {
   resize: none;
   padding: 12px 16px;
 }
-.form-field-checkbox-input {
-  margin-left: 13px;
+.form-field-check {
+  margin-top: 20px;
+
+  margin-left: 54px;
 }
-.form-field-checkbox {
-  display: inline-block;
+.check {
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+}
+.checkbox-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  margin-left: -24px;
+  background-image: url(/images/Checkbox.svg);
+  border-radius: 2px;
+}
+.check-text {
+  justify-content: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
-.form-field-link {
+.check-link {
   color: var(--accent-color);
 }
+.checkbox-input:checked + .check-box {
+  background-image: url(/images/checkbox-check.svg);
+}
+.checkbox-input:focus + .check-box {
+  background-image: url(/images/Checkbox.svg);
+}
+.checkbox-input:checked:focus + .check-box {
+  background-image: url(/images/checkbox-check.svg);
+}
+
+.modal-button-submit {
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 50px;
+
+  padding: 10px 55px;
+  border-radius: 4px;
+  border: none;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.15);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-field-button {
   width: 200px;
   height: 50px;
@@ -681,7 +796,7 @@ address {
 }
 .form-field-button:hover,
 .form-field-button:focus {
-  background-color: var(--hovef-color);
+  background-color: var(--hover-color);
 }
 /*Модальное окно*/
 
