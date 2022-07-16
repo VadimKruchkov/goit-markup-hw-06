@@ -613,9 +613,11 @@ address {
 .input-text {
   margin-top: 10px;
   margin-bottom: 12px;
+  font-family: "Roboto";
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.03em;
   color: var(--mainwhite-color);
   text-transform: uppercase;
 }
@@ -724,7 +726,7 @@ address {
   width: 16px;
   height: 15px;
   margin-left: -24px;
-  background-image: url(/images/Checkbox.svg);
+  background-image: url(./images/Checkbox.svg);
   border-radius: 2px;
 }
 .check-text {
@@ -741,13 +743,13 @@ address {
   color: var(--accent-color);
 }
 .checkbox-input:checked + .check-box {
-  background-image: url(/images/checkbox-check.svg);
+  background-image: url(./images/checkbox-check.svg);
 }
 .checkbox-input:focus + .check-box {
-  background-image: url(/images/Checkbox.svg);
+  background-image: url(./images/Checkbox.svg);
 }
 .checkbox-input:checked:focus + .check-box {
-  background-image: url(/images/checkbox-check.svg);
+  background-image: url(./images/checkbox-check.svg);
 }
 
 .modal-button-submit {
