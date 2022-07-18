@@ -696,8 +696,6 @@ address {
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
   fill: var(--primary-text-color);
 }
 .form-field-textarea {
@@ -859,6 +857,7 @@ address {
   right: 8px;
   border: #eeeeee;
   background: #ffffff;
+  cursor: pointer;
 }
 
 .close-modal:hover .close-modal-svg,
